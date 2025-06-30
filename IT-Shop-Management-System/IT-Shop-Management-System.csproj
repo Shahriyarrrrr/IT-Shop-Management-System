@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68752DAB-BC02-401A-9655-83C89AB77F06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IT_Shop_Management_System</RootNamespace>
+    <AssemblyName>IT-Shop-Management-System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.Designer.cs">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDashboard.Designer.cs">
+      <DependentUpon>EmployeeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminC.Designer.cs">
+      <DependentUpon>FormAdminC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCardPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCardPayment.Designer.cs">
+      <DependentUpon>FormCardPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderItem.Designer.cs">
+      <DependentUpon>FormOrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCartItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCartItem.Designer.cs">
+      <DependentUpon>FormCartItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeyboard.Designer.cs">
+      <DependentUpon>FormKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonitor.Designer.cs">
+      <DependentUpon>FormMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRAM.Designer.cs">
+      <DependentUpon>FormRAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCPU.Designer.cs">
+      <DependentUpon>FormCPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPU.Designer.cs">
+      <DependentUpon>FormGPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedInUser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDashboard.resx">
+      <DependentUpon>EmployeeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminC.resx">
+      <DependentUpon>FormAdminC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCardPayment.resx">
+      <DependentUpon>FormCardPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCartItem.resx">
+      <DependentUpon>FormCartItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeyboard.resx">
+      <DependentUpon>FormKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonitor.resx">
+      <DependentUpon>FormMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderItem.resx">
+      <DependentUpon>FormOrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRAM.resx">
+      <DependentUpon>FormRAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCPU.resx">
+      <DependentUpon>FormCPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPU.resx">
+      <DependentUpon>FormGPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-arrangement-with-keyboard-notebooks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wristwatch-cellphone-credit-card-blue-surface-online-shopping.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logout-sign-icon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3d-cartoon-style-character.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\www-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar-male-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar-male-5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="k-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="keyboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GPU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="monitor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GPU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
